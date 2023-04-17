@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lobbster_Adminko::content_elements" title="Lobbster Adminko" translate="title" module="Lobbster_Adminko"
+             parent="Magento_Backend::content" sortOrder="50"  resource="Magento_Backend::admin"/>
+        <add id="Lobbster_Adminko::post" title="Posts" translate="title" module="Lobbster_Adminko"
+             parent="Lobbster_Adminko::content_elements" sortOrder="10"   action="adminko/post" resource="Magento_Backend::admin"/>
+    </menu>
+</config>

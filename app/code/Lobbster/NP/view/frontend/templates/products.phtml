@@ -1,0 +1,15 @@
+<ul class="lobbster-related-products-carousel">
+
+        <?php
+        foreach ($block->getRelatedProducts() as $relatedProduct) {
+            $img_url = $block->getImage($relatedProduct, 'category_page_list')->getImageUrl();
+            $product_url = $relatedProduct->getProductUrl();
+            $product_title = $relatedProduct->getName();
+            echo "<li><a href='$product_url'><img src='$img_url' /><h4>$product_title</h4></a></li>";
+        }
+        ?>
+
+</ul>
+
+
+
